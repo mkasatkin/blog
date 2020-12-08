@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Все статьи на сайте
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Все статьи на сайте</h1>
+    {{ articles[0].title }}
+</div>
+{% endblock %}
