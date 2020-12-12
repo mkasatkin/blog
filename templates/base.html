@@ -11,12 +11,13 @@
 </head>
 <body>
     <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-  <p class="h5 my-0 me-md-auto fw-normal">PP: PricePage</p>
-  <nav class="my-2 my-md-0 me-md-3">
-    <a class="p-2 text-dark" href="/">Главная</a>
-    <a class="p-2 text-dark" href="/about">О нас</a></nav>
+  <a class="h5 my-0 me-md-auto fw-normal" style="margin-right: auto;" href="/">Magazin4ik</a>
+  <nav class="nav justify-content-end">
     <a class="btn btn-warning" href="/create-article">Создать</a>
-    <a class="btn" href="/posts">Статьи</a>
+    <a class="p-2 text-dark" href="/auth">Авторизация</a>
+    <a class="p-2 text-dark" href="/registration">Регистрация</a>
+    <a class="p-2 text-dark" href="/about">О нас</a>
+    <a class="p-2 text-dark" href="/posts">Статьи</a></nav>
 </header>
     {% block body %}{% endblock %}
 
@@ -28,7 +29,7 @@
       <div class="col-6 col-md">
         <h5>Features</h5>
         <ul class="list-unstyled text-small">
-          <li><a class="link-secondary" href="#">Cool stuff</a></li>
+          <li><a class="link-secondary" href="/stuff">🤙🤙🤙 Cool stuff 🤙🤙🤙</a></li>
           <li><a class="link-secondary" href="#">Random feature</a></li>
           <li><a class="link-secondary" href="#">Team feature</a></li>
           <li><a class="link-secondary" href="#">Stuff for developers</a></li>

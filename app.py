@@ -31,6 +31,21 @@ def about():
     return render_template("about.html")
 
 
+@app.route('/stuff')
+def stuff():
+    return render_template("stuff.html")
+
+
+@app.route('/auth')
+def auth():
+    return render_template("auth.html")
+
+
+@app.route('/registration')
+def registration():
+    return render_template("registration.html")
+
+
 # Запись в БД
 @app.route('/posts')
 def posts():
