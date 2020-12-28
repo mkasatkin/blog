@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Список пользователей
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Все пользователи</h1>
+
+    {% if usrs|length > 0 %}
+    {% for el in usrs %}
+        <div class="alert alert-info">
+            <p>{{ el.email }}</p>
+            <p>{{ el.password }}</p>
+        </div>
+    {% endfor %}
+    {% else %}
+    <p>Пользователей нет</p>
+    {% endif %}
+</div>
+{% endblock %}
